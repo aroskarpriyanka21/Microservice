@@ -12,7 +12,7 @@ pipeline {
                     namespace: 'webapps',
                     serverUrl: 'https://DD3FC83615841AB8F0216B22A5CCB989.gr7.ap-south-1.eks.amazonaws.com'
                 ]]) {
-                    sh 'kubectl apply -f kubernetes-manifests/'
+                    sh 'kubectl apply -k kubernetes-manifests/'
                 }
             }
         }
