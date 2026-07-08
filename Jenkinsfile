@@ -10,7 +10,7 @@ pipeline {
                     contextName: '',
                     credentialsId: 'k8-secret',
                     namespace: 'webapps',
-                    serverUrl: 'https://DD3FC83615841AB8F0216B22A5CCB989.gr7.ap-south-1.eks.amazonaws.com'
+                    serverUrl: 'https://5B2106746622D1549584DD686850D4FB.gr7.ap-south-1.eks.amazonaws.com'
                 ]]) {
                     sh 'kubectl apply -k kubernetes-manifests/'
                 }
@@ -25,7 +25,7 @@ pipeline {
                     contextName: '',
                     credentialsId: 'k8-secret',
                     namespace: 'webapps',
-                    serverUrl: 'https://DD3FC83615841AB8F0216B22A5CCB989.gr7.ap-south-1.eks.amazonaws.com'
+                    serverUrl: 'https://5B2106746622D1549584DD686850D4FB.gr7.ap-south-1.eks.amazonaws.com'
                 ]]) {
                     sh 'kubectl get pods -n webapps'
                     sh 'kubectl get svc -n webapps'
